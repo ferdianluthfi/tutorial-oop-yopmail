@@ -13,7 +13,8 @@ public class HomePage extends BasePage{
     @FindBy(className = "ycptinput")
     private WebElement searchbarInput;
 
-    public void testing(){
-        System.out.println("MANTAAPPPP MASUK SINI");
+    public void inputOnSearchBar(String input){
+        searchbarInput.click();
+        searchbarInput.sendKeys(input);
     }
 }
