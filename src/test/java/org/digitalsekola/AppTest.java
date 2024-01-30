@@ -28,7 +28,7 @@ class AppTest{
 
 //        Assert.assertEquals(titleEmail.getText(),"testing@yopmail.com!");
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(titleEmail.getText(),"testing@yopmail.com!");
+        softAssert.assertEquals(titleEmail.getText(),"testing@yopmail.com");
 
 
 //        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(30));
