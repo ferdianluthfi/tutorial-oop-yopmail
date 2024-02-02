@@ -29,6 +29,7 @@ public class HomePageTest extends BaseTest{
 
     @Test
     public void searchEmailAddress2(){
+        homePage.clearSearchBar();
         homePage.inputOnSearchBar("testing22");
         Assert.assertEquals(emailPage.getEmailTitle().getText(),"testing22@yopmail.com");
     }

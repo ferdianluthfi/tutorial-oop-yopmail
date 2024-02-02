@@ -21,5 +21,9 @@ public class HomePage extends BasePage{
         enterSearchBar.click();
     }
 
+    public void clearSearchBar(){
+        searchBarInput.clear();
+    }
+
 
 }
