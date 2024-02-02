@@ -17,11 +17,6 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-          cache: 'npm'
       - name: Run tests
         run: mvn test -DxmlFile="src/test/java/org/digitalsekola/resource/testng.xml"
       - name: Upload screenshots
