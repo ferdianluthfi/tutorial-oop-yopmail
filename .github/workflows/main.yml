@@ -22,7 +22,7 @@ jobs:
           node-version: '16'
           cache: 'npm'
       - name: Run tests
-        run: mvn test -DxmlSuite="abc.xml"
+        run: mvn test -DxmlSuite="src/test/java/org/digitalsekola/resource/testng.xml"
       - name: Upload screenshots
         uses: actions/upload-artifact@v3
         if: always()
