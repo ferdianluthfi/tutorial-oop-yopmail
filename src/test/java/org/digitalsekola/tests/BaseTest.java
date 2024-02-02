@@ -11,7 +11,6 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
     protected WebDriver driver;
-
     @BeforeSuite
     public void globalSetUp(){
         System.out.println("************************************** Test Execution Started *****************************");

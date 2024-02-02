@@ -25,5 +25,4 @@ public class HomePage extends BasePage{
         searchBarInput.clear();
     }
 
-
 }
