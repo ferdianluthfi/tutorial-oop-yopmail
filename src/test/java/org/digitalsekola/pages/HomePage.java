@@ -11,10 +11,18 @@ public class HomePage extends BasePage{
     }
 
     @FindBy(className = "ycptinput")
-    private WebElement searchbarInput;
+    private WebElement searchBarInput;
+
+    @FindBy(xpath = "//button[@class=\"md\"]")
+    private WebElement enterSearchBar;
 
     public void inputOnSearchBar(String input){
-        searchbarInput.click();
-        searchbarInput.sendKeys(input);
+        searchBarInput.sendKeys(input);
+        enterSearchBar.click();
     }
+
+    public void clearSearchBar(){
+        searchBarInput.clear();
+    }
+
 }
