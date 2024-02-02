@@ -3,7 +3,7 @@ name: Test
 on:
   schedule:
     # Run tests every hour
-    - cron: '*/10 * * * *'
+    - cron: '*/90 * * * *'
     
   workflow_dispatch:
 
