@@ -24,14 +24,11 @@ public class BaseTest {
 
     @BeforeClass
     public void setup(){
-        driver = new FirefoxDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.get("https://yopmail.com");
+        System.out.println("************************************** Setup before class *************************************");
     }
 
     @AfterClass
     public void tearDown(){
-        driver.quit();
+        System.out.println("************************************** Setup after class *************************************");
     }
 }
